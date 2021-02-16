@@ -25,7 +25,6 @@ public class Main {
         BufferedReader fileReader = new BufferedReader(new FileReader(path));
         // for write to file
         BufferedWriter fileWriter = new BufferedWriter(new FileWriter(outputPath));
-
         String line;
         int c = 0;
         while ((line = fileReader.readLine()) != null) {
