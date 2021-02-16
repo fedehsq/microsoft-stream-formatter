@@ -1,3 +1,4 @@
+import java.awt.datatransfer.StringSelection;
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -43,6 +44,6 @@ public class Main {
         fileWriter.flush();
         fileWriter.write("\n");
         fileWriter.close();
-        System.out.println("file created: " + outputPath);
+        System.out.println("file " + outputPath + " created.");
     }
 }
