@@ -33,7 +33,9 @@ public class Main {
                 || line.contains("-")) {
                 continue;
             }
+            line = line.toLowerCase();
             line = line.replaceAll("\\.", "");
+            line = line.replaceAll("\\?", "");
             fileWriter.write(c == 7 ? line.concat("\n") : line.concat(" "));
             c = c == 7 ? 0 : c + 1;
         }
@@ -41,5 +43,6 @@ public class Main {
         fileWriter.flush();
         fileWriter.write("\n");
         fileWriter.close();
+        System.out.println("file created: " + outputPath);
     }
 }
